@@ -7,7 +7,7 @@ Present each task for the teacher when you have solved the task. A written repor
 The report should be sent to the lab teacher within 1 week, thus before next week lab. Use text in the programs (comments) to explain the function. Each program must also have a header like the example below.
 Send the lap report to the lab teacher. 
 
-=======
+======
 
 * Task 1:
 Write a program in Assembly language to light LED 2.
