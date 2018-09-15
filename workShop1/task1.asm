@@ -22,13 +22,14 @@
 ; Other information:
 ;
 ; Changes in program: 2018-09-13: Implementation
-;					  2018-09-14: Improve the code 
+;		      2018-09-14: Improve the code 
 ;
 ;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 .include "m2560def.inc"
 .def dataDir = r16
-
+.def ledOn = r17
+	
 ;set portB to output
 ldi dataDir, 0xFF  ;0b1111_1111
 out DDRB, dataDir
