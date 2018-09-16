@@ -20,7 +20,8 @@
 ;
 ; Other information:
 ;
-; Changes in program: 2018-09-13: Implementation
+; Changes in program: 2018-09-14: Implementation
+;                     2018-09-16: Edit comments
 ;
 ;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
@@ -40,13 +41,13 @@ ldi dataDir, 0x00
 out DDRA, dataDir
 
 
-ldi default, 0xFF			;turn out all LED
-ldi ledZero, 0b1111_1110 	;light only LED0
+ldi default, 0xFF			    ;turn off all LED
+ldi ledZero, 0b1111_1110 	    ;light only LED0
 
 loop:
-sbis PINA, PINA5 	; skip next line when user dont press sw5 
-out PORTB, ledZero	; turn on LED0
-out PORTB, default 	; default setting 
+sbis PINA, PINA5 	            ; skip next line (Line 49) when user dont press SW5 
+out PORTB, ledZero	            ; turn on LED0
+out PORTB, default 	            ; default setting (LEDX = off)
 rjmp loop
 
 

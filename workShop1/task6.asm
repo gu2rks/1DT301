@@ -65,7 +65,7 @@ out PORTB, ledOn
 ldi ledOff, 0b0111_1111
 
 
-forward:
+forward:                
 
     ldi  r18, 3
     ldi  r19, 138
@@ -80,8 +80,8 @@ L2: dec  r20
 
 lsl ledOn 		        ; shifts last bit to the left
 out PORTB, ledOn
-cpi ledOn, 0x00         ;compare ledOn with 0xFF
-breq backward 	        ;IF ledOn = 0xFF jump to start
+cpi ledOn, 0x00         ; compare ledOn with 0xFF
+breq backward 	        ; IF ledOn = 0xFF jump to start
 
 rjmp forward
 
@@ -98,10 +98,11 @@ L3: dec  r20
     brne L3
     rjmp PC+1
 
-out PORTB, ledOff
-lsr ledOff
-cpi ledOff, 0x00        ;compare ledOn with 0x00
-breq start 	            ;IF ledOff = 0x00 jump to start
+out PORTB, ledOff   
+
+lsr ledOff              ; shifts first bit to the right
+cpi ledOff, 0x00        ; compare ledOff with 0x00
+breq start 	            ; IF ledOff = 0x00 jump to start
 
 rjmp backward
 
