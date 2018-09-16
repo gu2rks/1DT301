@@ -22,7 +22,8 @@
 ; Other information:
 ;
 ; Changes in program: 2018-09-13: Implementation
-;		      2018-09-14: Improve the code 
+;		              2018-09-14: Improve the code
+;                     2018-09-16: Edit comments
 ;
 ;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
@@ -34,7 +35,7 @@
 ldi dataDir, 0xFF  ;0b1111_1111
 out DDRB, dataDir
 
-;light LED2
+;light LED2 (0 as on, 1 as off)
 ldi dataDir, 0xFB ; 0b1111_10111
 out PORTB, dataDir
 

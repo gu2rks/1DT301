@@ -22,12 +22,13 @@
 ; Other information:
 ;
 ; Changes in program: 2018-09-13: Implementation
-;		      2018-09-14: Add loop
+;		              2018-09-14: Add loop
+;                     2018-09-16: Edit comments
 ;
 ;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 .include "m2560def.inc"
-.def dataDir = r16 ; Data Direction 
+.def dataDir = r16
 .def switch = r17
 
 ; set portB as output
@@ -40,7 +41,7 @@ out DDRA, dataDir
 
 loop:
 
-in switch, PINA			;read the content of portA (switches)
-out PORTB, switch 		;write the content of switch to portB (LED)
+in switch, PINA			;Read the content of PINA (switches) and safe it in "switch" (r17)
+out PORTB, switch 		;Lights LEDX
 
 rjmp loop
