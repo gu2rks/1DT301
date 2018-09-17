@@ -1,4 +1,5 @@
-# 1DT301, Computer Technology I, autumn 2018. Lab. 1: How to use the PORTs.Digital input/output. Subroutine call.
+# 1DT301, Computer Technology I, autumn 2018.
+# Lab. 1: How to use the PORTs.Digital input/output. Subroutine call.
 ## Goal for this lab:
 Learn how to write programs in Assembly language, compile them, download to the STK600 and run them on the target CPU and also to use the AVR Studio 4 Simulator.
 Development environment: AVR Studio4 or AVR Studio6
