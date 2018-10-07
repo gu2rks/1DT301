@@ -13,8 +13,10 @@
     - lecture 2 page 4
 6. Describe what the code “Move (SP)+, A” computes.
 7. Describe the difference between a RISC machine and a CISC machine.
-    - [RISC VS CISC](https://youtu.be/_EKgwOAAWZA)
-    - [RISC VS CISC FUN](https://youtu.be/a4kgtygCZBc)
+    - lecture 2 page 27,29
+    - [RISC VD CISC (text)](https://cs.stanford.edu/people/eroberts/courses/soco/projects/risc/risccisc/)
+    - [RISC VS CISC (youtube)](https://youtu.be/_EKgwOAAWZA)
+    - [RISC VS CISC FUN (youtube)](https://youtu.be/a4kgtygCZBc)
 8. Describe what an edge triggered D flipflop is.
 9. Describe the 3 clock cycle computation process for the code “Add R1, R2, R3”.
     - lecture 5 page 4
