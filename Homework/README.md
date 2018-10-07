@@ -6,6 +6,7 @@
 2. In a byte addressable memory with a 64-bit address, what is the maximum size of memory?
 3. Describe the addressing modes you have learned.
     - lecture 3 page 7-11
+    - lecture 1 page 33-38
 4. Describe what the code “Add 20(R1), R0” computes?
     - lecture 1 page 36, index mode
 5. Write an assembly language code which adds 100 numbers. Assume that it is a 32-bit machine and all the numbers are put in an array with the starting address of 1000.
